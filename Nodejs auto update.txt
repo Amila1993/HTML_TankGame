@@ -1,0 +1,44 @@
+Node.js command prompt
+
+go to the directory
+
+npm install -g browser-sync
+
+Browser-sync
+
+browser-sync start --server --files 
+
+browser-sync start --server --files "*.html"
+
+cnrl+c = to type again 
+
+browser-sync start --server --files "_css/*.css"
+
+browser-sync start --server --files "**/*"
+
+______________________________________________________________
+
+position    static	cannot change
+	relative	can be changed
+	absolute	placed in a position according to the DOM tree. exit flow layer
+	fixed	
+	z-index	what on what
+
+Floting	
+	go to the edge of the parent
+
+Standard
+	display
+	float
+	clear
+	position
+______________________________________________________________
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+@media screen and (min-width:320px) and (max-width:539px){}
+______________________________________________________________
+
+CSS3 Animation
+	1.Configuration
+	2.Keyframes	
+	
