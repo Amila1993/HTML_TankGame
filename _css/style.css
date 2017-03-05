@@ -1,0 +1,35 @@
+#base {
+    position:absolute; 
+    top:140px; 
+    left:140px;
+    width:100px; 
+    height:150px;          
+}
+
+#cannon{
+	position:relative; 
+    bottom:120px ; 
+    width:100px;
+    height:120px;
+}
+
+
+#base_img {
+    position:relative; 
+    width:100px; 
+    height:150px;          
+}
+
+#gun{
+    position:relative; 
+    bottom:25px ; 
+    width:100px;
+    height:120px;          
+}
+
+#grd_img {
+    position:fixed;
+    width:800px; 
+    height:600px;
+    border:2px solid red;
+}
