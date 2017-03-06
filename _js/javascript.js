@@ -1,9 +1,10 @@
 //Arrow keys
 var pane = $('#ground'),
-    box = $('#base'),
-    w = pane.width() - box.width(),
+    base = $('#base'),
+    cannon = $('#cannon'),
+    w = pane.width() - base.width(),
     d = {},
-    rot_speed = 2,        //Canon rotating Speed
+    rot_speed = 2,        //Cannon rotating Speed
     tank_friction = 50,   //Tank speed (descending)  
     x = 3;
 
@@ -11,7 +12,7 @@ var pane = $('#ground'),
 function newv(v,a,b) {
 
 // Mouse rotate
-    cannon = $('#cannon');
+
 
     var cannonCenter=[cannon.offset().left+cannon.width()/2, cannon.offset().top+cannon.height()/2];
 
@@ -39,10 +40,13 @@ function newv(v,a,b) {
         d[e.which] = true;
         
         function rotate(degree) {       //Rotate function
-               $box.css({ WebkitTransform: 'rotate(' + degree + 'deg)'});
+               $base.css({ WebkitTransform: 'rotate(' + degree + 'deg)'}),
+               $cannon.css({ WebkitTransform: 'rotate(' + (-degree) + 'deg)'});
+               console.log("Rotating");
             }
 
-        var $box = $("#base");
+        var $base = $("#base");
+        var $cannon = $("#cannon");
 
         if (e.keyCode==68) {  //Right key (D)
             rot=rot + rot_speed;
@@ -63,8 +67,18 @@ setInterval(function() {
 
 
 
-    box.css({
+    base.css({
         top: function(i,v) { return newv(v, 87, 83); }  //Up Down (W S)
 
     });
 }, tank_friction);
+
+
+
+$(document).ready(function () {
+    $("#grd_img").click(function () {
+            $("#cannon").animate({ top: '5px' }, 50);
+            $("#cannon").animate({ top: '-5px' }, 200);
+    });
+});
+

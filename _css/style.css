@@ -1,15 +1,15 @@
 #base {
     position:relative; 
-    top:140px; 
+    top:160px; 
     left:140px;
     width:100px; 
     height:150px;
-    /*background-color: red;          */
+    /*background-color: red;*/
 }
 
 #cannon{
-	position:relative; 
-    bottom:140px ; 
+	position:relative;
+    top: 25px;   
     width:100px;
     height:120px;
     /*background-color: blue;*/
@@ -17,21 +17,23 @@
 
 
 #base_img {
-    position:relative; 
+    position:absolute; 
     width:100px; 
-    height:150px;          
+    height:150px;
+
 }
 
 #gun{
     position:relative; 
     bottom:25px ; 
     width:100px;
-    height:120px;          
+    height:120px;
+
 }
 
 #grd_img {
     position:fixed;
-    width:800px; 
-    height:600px;
+    width:1900px; 
+    height:900px;
     border:2px solid red;
 }
